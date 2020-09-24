@@ -53,7 +53,8 @@ func (c *MainController) Post(){
 		return
 	}
 	fmt.Print("姓名",person.Name)
-	fmt.Print("年龄",person.Age)
-	fmt.Print("性别",person.Sex)
+	fmt.Print("生日",person.Birthday)
+	fmt.Print("地址",person.Address)
+	fmt.Print("绰号",person.Nick)
 	c.Ctx.WriteString("成功")
 }
