@@ -15,7 +15,8 @@ type MainController struct {
 func (c *MainController) Get() {
 	//1、获取name、age、sex
 	//2、做数据对比
-	//3、
+	//c.GetString("user") 返回字符串
+	//c.GetInt("psd") 返回整数
 	UserName := c.Ctx.Input.Query("User")
 	Password :=c.Ctx.Input.Query("Psd")
 	if UserName !="Floatingdream20" && Password !="123456" {
@@ -52,9 +53,10 @@ func (c *MainController) Post(){
 		c.Ctx.WriteString("解析失败")
 		return
 	}
-	fmt.Print("姓名",person.Name)
-	fmt.Print("生日",person.Birthday)
-	fmt.Print("地址",person.Address)
-	fmt.Print("绰号",person.Nick)
+	fmt.Println("年龄",person.Name)
+	fmt.Println("年龄",person.Age)
+	fmt.Println("性别",person.Sex)
 	c.Ctx.WriteString("成功")
 }
+
+

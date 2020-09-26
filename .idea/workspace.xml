@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdea77f2-94ec-4344-b9dc-8c8e690a9fec" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/registerControllers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/person.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/person.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="helloBeego922" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,22 +107,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="119" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1600776360154" />
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1600965327235">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1601105205551">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1600965327235" />
-    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1600965327235">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1601105205551" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1601105205551">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1600965327235" />
-    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1600965327235">
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1601105205551" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1601105205551">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1600965327235" />
-    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1600965327235">
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1601105205551" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1601105205551">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1600965327235" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1601105205551" />
     <state x="144" y="6" key="SettingsEditor" timestamp="1600776371032">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
