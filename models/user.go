@@ -8,8 +8,9 @@ package models
 }*/
 
 type User struct {
-	User string `form:"name"`
-	Birthday string `form:"birthday"`
-	Address string `form:"address"`
-	Nick string `form:"nick"`
+	User string `json:"userName"`
+	Password string `json:"password"`
+	Birthday string `json:"birthday"`
+	Address string `json:"address"`
+	Nick string `json:"nick"`
 }
