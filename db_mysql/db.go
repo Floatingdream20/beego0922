@@ -6,6 +6,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"github.com/astaxie/beego"
+	_"github.com/astaxie/beego"
 	_"github.com/go-sql-driver/mysql"
 	"helloBeego922/models"
 )
@@ -34,11 +35,9 @@ func InsertUser(user models.User)(int64,error){
 	bytes := hashMd5.Sum(nil)
 	user.Password = hex.EncodeToString(bytes)
 	fmt.Println("将要保存的用户名:",user.User,"密码:",user.Password,"生日：",user.Birthday,"地址：",user.Address,"绰号：",user.Nick)
-
-
 	result,err := Db.Exec("insert into lj( userName, password,birthday,address,nick) values(?,?,?,?,?)",user.User,user.Password,user.Birthday,user.Address,user.Nick)
-	fmt.Println(err)
-	if err != nil {//保存数据时遇到错误
+	if err != nil {
+		//fmt.Println(err.Error())//保存数据时遇到错误
 		return -1,err
 	}
 	id, err := result.RowsAffected()
@@ -47,6 +46,6 @@ func InsertUser(user models.User)(int64,error){
 	}
 	return id,nil
 }
-func QueryUser(){
-	Db.QueryRow("select * from ")
-}
+//func QueryUser(){
+//	Db.QueryRow("select * from ")
+//}

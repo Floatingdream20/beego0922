@@ -8,7 +8,7 @@ package models
 }*/
 
 type User struct {
-	User string `json:"userName"`
+	User string `json:"user"`
 	Password string `json:"password"`
 	Birthday string `json:"birthday"`
 	Address string `json:"address"`

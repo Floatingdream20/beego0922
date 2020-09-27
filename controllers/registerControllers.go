@@ -30,7 +30,7 @@ func (r *RegisterControllers) Post() {
 	//	return
 	//}
 	bodyBytes,err :=ioutil.ReadAll(r.Ctx.Request.Body)
-	fmt.Println(err)
+	//fmt.Println(err)
 	if err != nil {
 		r.Ctx.WriteString("数据接收错误,请重试")
 		return
@@ -43,7 +43,7 @@ func (r *RegisterControllers) Post() {
 		return
 	}
 	id,err := db_mysql.InsertUser(user)
-	fmt.Println(err)
+	//fmt.Println(err)
 	if err !=nil {
 		fmt.Println(err.Error())
 		r.Ctx.WriteString("用户保存失败。")
@@ -62,5 +62,5 @@ func (r *RegisterControllers) Post() {
     //fmt.Println(user.Birthday)
     //fmt.Println(user.Address)
     //fmt.Println(user.Nick)
-    //r.Ctx.WriteString("数据接收成功，并解析成功。")
+    r.Ctx.WriteString("数据接收成功，并解析成功。")
 }
